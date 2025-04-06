@@ -139,9 +139,7 @@ kubectl port-forward svc/grafana-service 3000:3000
 
 ## 🙌 Acknowledgements
 
-Special thanks to **Podili Sravan Kumar**, **Manikanta Nandyala**, **Aravind Ramini** and my manager **Kesari Suresh**  
-from the I&O team at **Medtronic Engineering and Innovation Centre**  
-for their invaluable guidance and support throughout this DevOps internship project.
+Special thanks to **Podili Sravan Kumar**, **Manikanta Nandyala**, **Aravind Ramini** and my manager **Kesari Suresh** from the I&O team at **Medtronic Engineering and Innovation Centre** for their invaluable guidance and support throughout this DevOps internship project.
 
 ---
 
