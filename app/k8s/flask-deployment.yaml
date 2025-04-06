@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-monitoring-app
+  labels:
+    app: flask-monitoring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-monitoring
+  template:
+    metadata:
+      labels:
+        app: flask-monitoring
+    spec:
+      containers:
+        - name: flask-container
+          image: udyngpaws/flask-monitoring-app:latest
+          ports:
+            - containerPort: 5000
