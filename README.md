@@ -2,7 +2,7 @@
 
 This project demonstrates real-time monitoring of a containerized **Flask application** deployed on **Kubernetes**, with metrics scraped using **Prometheus** and visualized using **Grafana**.
 
-> ✅ Built as part of my DevOps Internship at **Medtronic Engineering and Innovation Centre**
+> Built as part of my DevOps Internship at **Medtronic Engineering and Innovation Centre**
 
 ---
 
@@ -69,34 +69,35 @@ mini-project-k8s-monitoring/
 
 You can pull the image using:
 
+```
 docker pull udyngpaws/flask-monitoring-app:latest
-
+```
 ---
 
 ## 🚀 Running the App Locally
 
-# Start Minikube
-
+1. Start Minikube
+```
 minikube start --driver=docker
-
-# Deploy the Flask app
-
+```
+2. Deploy the Flask app
+```
 kubectl apply -f k8s/
-
-# Deploy Prometheus
-
+```
+3. Deploy Prometheus
+```
 kubectl apply -f prometheus/
-
-# Deploy Grafana
-
+```
+4. Deploy Grafana
+```
 kubectl apply -f grafana/
-
-# Port-forward the services
-
+```
+5. Port-forward the services
+```
 kubectl port-forward svc/flask-service 5000:5000
 kubectl port-forward svc/prometheus-service 9090:9090
 kubectl port-forward svc/grafana-service 3000:3000
-
+```
 ---
 
 ## 📸 Screenshots
